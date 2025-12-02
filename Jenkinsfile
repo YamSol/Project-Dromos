@@ -20,13 +20,6 @@ pipeline {
                 }
             }
         }
-
-        stage('Checkout') {
-            steps {
-                // Pega o código do repositório
-                checkout scm
-            }
-        }
         
         stage('Test') {
             steps {
